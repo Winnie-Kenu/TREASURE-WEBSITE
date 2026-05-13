@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import aboutHeroImg from '../assets/hero-backgrounds/about-hero.jpg'
-import consultantPortrait from '../assets/portrait/benajishafeportfolio.jpg'
+import consultantPortrait from '../assets/portrait/benajisafeportfolio.jpg'
 
 const LinkedInIcon = () => (
   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black uppercase leading-[0.9] tracking-tighter mb-8"
+            className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-headline font-black uppercase leading-[0.9] tracking-tighter mb-8 break-words"
             style={{ color: 'rgba(255, 255, 255, 0.25)' }}
           >
             LEADING <span style={{ color: 'var(--primary)' }}>THE</span> WAY
@@ -202,7 +202,7 @@ export default function AboutPage() {
           >
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-headline font-black uppercase tracking-tight">
-                The Chief Land Mapper
+                A surveyor by profession, an academic and researcher by vocation, and a humanist by nature.
               </h2>
               <div className="h-1 w-20 bg-primary" />
               <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">
@@ -210,14 +210,10 @@ export default function AboutPage() {
                 <span className="text-white font-bold">
                   15 years
                 </span>{' '}
-                Mr. Benjamin Ifedeji Ajisafe has been the go-to person when it comes to measuring land in Nigeria. As a beloved{' '}
-                <span className="text-white">
-                  Teacher at the Federal School of Surveying
-                </span>
-                , he takes what he teaches in the classroom straight to the building sites.
+                Mr. Benjamin Ifedeji Ajisafe has been the go-to person when it comes to measuring land in Nigeria. He is a surveyor by profession, an academic and researcher by vocation, and a humanist by nature. He brings his deep expertise from the Federal School of Surveying straight to the building sites.
               </p>
               <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">
-                He is an expert at flying drones (UAVs) and using laser scanners (LiDAR) to take pictures of the earth from the sky. Because he is always learning, Treasure Multi-map uses the best tools to get the job done.
+                He is an expert at flying drones (UAVs) and using laser scanners (LiDAR) to take pictures of the earth from the sky. Because he is always learning, Treasure Multi-map Concept uses the best tools to get the job done.
               </p>
             </div>
 

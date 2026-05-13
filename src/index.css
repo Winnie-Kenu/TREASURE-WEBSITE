@@ -191,7 +191,12 @@
   background: #484847;
 }
 
-/* Smooth scroll */
+/* Smooth scroll and overflow control */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }

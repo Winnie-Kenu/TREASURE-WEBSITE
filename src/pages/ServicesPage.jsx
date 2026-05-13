@@ -45,7 +45,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-headline font-black tracking-tighter uppercase leading-[0.85]"
+            className="text-5xl sm:text-7xl md:text-[10rem] lg:text-[12rem] font-headline font-black tracking-tighter uppercase leading-[0.85] break-words"
             style={{ color: 'rgba(255, 255, 255, 0.25)' }}
           >
             WHAT <span style={{ color: 'var(--primary)' }}>WE</span> DO.
@@ -366,16 +366,16 @@ export default function ServicesPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="text-5xl sm:text-6xl md:text-8xl font-headline font-black tracking-tighter uppercase mb-12">
+              <h2 className="text-4xl sm:text-6xl md:text-8xl font-headline font-black tracking-tighter uppercase mb-12">
                 Ready to <span className="text-primary">Measure?</span>
               </h2>
               <p className="text-on-surface-variant text-lg md:text-xl mb-12">
                 Talk to our friendly team today to plan out your land and see what
                 you need to start building.
               </p>
-              <Button size="lg" className="text-lg font-black px-12 py-6" asChild>
+              <Button size="lg" className="text-base md:text-lg font-black px-6 md:px-12 py-4 md:py-6 w-full sm:w-auto" asChild>
                 <Link to="/contact">
-                  Request a Service Consultation
+                  GET STARTED
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </Link>
               </Button>

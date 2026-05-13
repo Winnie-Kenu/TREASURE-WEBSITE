@@ -38,7 +38,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-headline font-black tracking-tighter uppercase leading-[0.85] max-w-5xl"
+            className="text-5xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-headline font-black tracking-tighter uppercase leading-[0.85] max-w-5xl break-words"
             style={{ color: 'rgba(255, 255, 255, 0.25)' }}
           >
             LET'S BUILD <span style={{ color: 'var(--primary)' }}>SOMETHING</span>
@@ -95,6 +95,7 @@ export default function ContactPage() {
                   <select 
                     name="project_type"
                     required
+                    aria-label="Select Project Type"
                     className="w-full bg-surface-container-highest border-none p-4 text-on-background focus:ring-0 focus:border-b-2 focus:border-primary transition-all border-b-2 border-transparent outline-none appearance-none font-body rounded-none"
                   >
                     <option value="" disabled selected>Select a service</option>

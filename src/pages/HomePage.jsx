@@ -7,7 +7,7 @@ import boundarySurveyImg from '@/assets/services-image/boundary-survey.png'
 import topographicSurveyImg from '@/assets/services-image/Topographic-SURVEY.jpg'
 import engineeringSurveyImg from '@/assets/services-image/ENGINEERING-SURVEY.png'
 import gisMappingImg from '@/assets/services-image/GIS.png'
-import consultantPortrait from '@/assets/portrait/benajishafeportfolio.jpg'
+import consultantPortrait from '@/assets/portrait/benajisafeportfolio.jpg'
 
 import carousel1 from '@/assets/carousel-images/CAROUSEL-1.png'
 import carousel2 from '@/assets/carousel-images/CAROUSEL-2.png'
@@ -129,38 +129,55 @@ export default function HomePage() {
         </div>
 
         <motion.div
-          className="relative z-20 max-w-5xl pt-5 md:pt-0"
+          className="relative z-20 w-full max-w-6xl pt-5 md:pt-0"
           initial="hidden"
           animate="visible"
           variants={stagger}
         >
-          <motion.div variants={fadeUp} custom={0} className="mb-6 flex items-start md:items-center gap-4">
-            <div className="h-[2px] w-8 md:w-12 bg-primary shrink-0 mt-2 md:mt-0" />
-            <span className="font-headline text-primary tracking-[0.2em] md:tracking-[0.3em] uppercase text-[10px] md:text-sm font-bold">
-              Benjamin Ajisafe • The Best Land Surveyor in Ibadan, Nigeria
+          {/* Byline — Personal Description */}
+          <motion.div variants={fadeUp} custom={0} className="mb-8 md:mb-10 flex items-start md:items-center gap-4">
+            <div className="h-[2px] w-8 md:w-16 bg-primary shrink-0 mt-2 md:mt-0" />
+            <span className="font-headline text-primary tracking-[0.15em] md:tracking-[0.25em] uppercase text-[9px] sm:text-[10px] md:text-xs font-bold leading-relaxed">
+              Benjamin Ajisafe • A surveyor by profession, an academic and researcher by vocation, and a humanist by nature
             </span>
           </motion.div>
 
+          {/* Hero Tagline — The sole statement */}
           <motion.h1
             variants={fadeUp}
             custom={1}
-            className="text-5xl sm:text-7xl md:text-[10rem] lg:text-[12rem] font-headline font-black leading-[0.95] md:leading-[0.8] tracking-tighter uppercase mb-8"
-            style={{
-              color: 'rgba(255, 255, 255, 0.25)'
-            }}
+            className="font-headline font-black tracking-tighter uppercase mb-12 md:mb-16"
           >
-            WE MEASURE IT <span className="text-primary block mt-2 md:mt-0" style={{ color: 'var(--primary)' }}>PERFECTLY</span>
+            <span
+              className="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1] md:leading-[0.95] mb-2 md:mb-3"
+              style={{ color: 'rgba(255, 255, 255, 0.3)' }}
+            >
+              Working with Every
+            </span>
+            <span
+              className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] leading-[0.95] md:leading-[0.9] text-primary mb-2 md:mb-3"
+              style={{ color: 'var(--primary)' }}
+            >
+              Fundamental
+            </span>
+            <span className="flex flex-col gap-2 md:gap-3">
+              <span
+                className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] leading-[0.95] md:leading-[0.9] text-primary"
+                style={{ color: 'var(--primary)' }}
+              >
+                Elements
+              </span>
+              <span
+                className="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1] md:leading-[0.95] font-black"
+                style={{ color: 'rgba(255, 255, 255, 0.6)' }}
+              >
+                of Knowledge
+              </span>
+            </span>
           </motion.h1>
 
-          <motion.p
-            variants={fadeUp}
-            custom={2}
-            className="max-w-2xl text-base md:text-xl text-on-surface-variant font-light leading-relaxed mb-10 border-l-4 border-primary pl-6 md:pl-8"
-          >
-            The best surveyor for all your land needs. We use cool tools to measure land perfectly, making sure every road, school, and house in Oyo and across Nigeria is built in exactly the right place.
-          </motion.p>
-
-          <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
+          {/* CTA Buttons */}
+          <motion.div variants={fadeUp} custom={2} className="flex flex-wrap gap-4 md:gap-6">
             <Button size="lg" asChild>
               <Link to="/services">
                 Explore Services
@@ -388,12 +405,12 @@ export default function HomePage() {
                 Leadership & Vision
               </div>
               
-              <h2 className="text-5xl sm:text-7xl md:text-[6rem] font-headline font-black uppercase tracking-tighter mb-10 leading-[0.85]">
-                <span className="block text-transparent pb-2" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>THE</span>
-                <span className="block text-white pb-2">MASTER</span>
-                <span className="block text-primary flex items-center gap-6">
-                  TEACHER
-                  <span className="text-3xl sm:text-5xl text-white/10 font-light hidden sm:inline-block tracking-normal">/01</span>
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-headline font-black uppercase tracking-tighter mb-10 leading-[0.9]">
+                <span className="block text-transparent pb-1" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>A surveyor by profession,</span>
+                <span className="block text-white pb-1">an academic and researcher by vocation,</span>
+                <span className="block text-primary flex flex-wrap items-center gap-6">
+                  and a humanist by nature.
+                  <span className="text-2xl sm:text-4xl text-white/10 font-light hidden sm:inline-block tracking-normal">/01</span>
                 </span>
               </h2>
 

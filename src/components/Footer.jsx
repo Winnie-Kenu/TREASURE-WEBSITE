@@ -65,12 +65,12 @@ export default function Footer() {
           <div className="md:col-span-5">
             <Link to="/" className="inline-block mb-8">
               <span className="font-headline text-2xl font-black tracking-tighter text-primary uppercase">
-                Treasure Multi-map
+                Treasure Multi-map Concept
               </span>
             </Link>
             <p className="text-on-surface-variant text-sm leading-relaxed max-w-sm mb-8">
-              Treasure Multi-map is the best land surveyor in Ibadan, Oyo, and Nigeria.
-              Providing expert GIS, Topography, and Mapping services with precision for Africa's evolving infrastructure.
+              Treasure Multi-map Concept is a geospatial and infrastructure company based in Ibadan, Oyo State, Nigeria.
+               We provide expert land surveying and infrastructure development, GIS and mapping, environmental and project management services using advanced methods and cutting-edge technologies.
             </p>
 
             {/* Social Links */}
@@ -169,7 +169,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/[0.07] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-on-surface-variant text-xs tracking-wider">
-            © {new Date().getFullYear()} Treasure Multi-map. All rights reserved.
+            © {new Date().getFullYear()} Treasure Multi-map Concept. All rights reserved.
           </p>
 
         </div>

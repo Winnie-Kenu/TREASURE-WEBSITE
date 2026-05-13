@@ -19,9 +19,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 h-24 max-w-full mx-auto">
       <Link to="/" className="flex items-center gap-3 group">
-        <img src={treasureLogo} alt="Treasure Multi-map Logo" className="h-10 w-auto group-hover:scale-105 transition-transform" />
-        <span className="text-xl md:text-2xl font-black tracking-tighter text-primary uppercase font-headline">
-          Treasure Multi-map
+        <img src={treasureLogo} alt="Treasure Multi-map Concept Logo" className="h-10 w-auto group-hover:scale-105 transition-transform" />
+        <span className="text-base sm:text-lg md:text-2xl font-black tracking-tighter text-primary uppercase font-headline leading-tight">
+          Treasure Multi-map Concept
         </span>
       </Link>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-on-background p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle navigation"
+          aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
